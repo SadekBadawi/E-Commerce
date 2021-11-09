@@ -37,5 +37,6 @@ dependencies {
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
 
     //circle Indicator
-    implementation 'me.relex:circleindicator:2.1.6'
+//    implementation 'me.relex:circleindicator:2.1.6'
+    implementation 'com.viewpagerindicator:parent:2.4.1'
 }

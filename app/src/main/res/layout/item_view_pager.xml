@@ -5,6 +5,7 @@
     android:orientation="vertical">
 
     <ImageView
+        android:layout_marginTop="40dp"
         android:id="@+id/imgItemViewPaper"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
@@ -12,6 +13,7 @@
     <TextView
         android:id="@+id/txtTitleItemViewPager"
         android:layout_gravity="center_horizontal"
+        android:gravity="center"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"
         android:textSize="@dimen/text_medium"
@@ -21,6 +23,7 @@
 
     <TextView
         android:id="@+id/txtBodyItemViewPager"
+        android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:textColor="@color/black"

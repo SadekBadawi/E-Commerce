@@ -10,11 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplication">
         <activity
+            android:name=".activity.ChoseLoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.SliderActivity"
             android:exported="false" />
         <activity
             android:name=".activity.WelcomeActivity"
-            android:exported="false">
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
