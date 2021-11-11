@@ -1,6 +1,7 @@
 package com.sadek.myapplication.activity;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 import androidx.viewpager.widget.ViewPager;
 
 import android.content.Intent;
@@ -17,6 +18,8 @@ import com.sadek.myapplication.models.ViewPagerModel;
 import java.util.ArrayList;
 import java.util.List;
 
+import io.paperdb.Paper;
+
 public class SliderActivity extends AppCompatActivity {
     private ViewPager viewPagerActivitySlider;
     //    private CircleIndicator circleIndicatorActivityDetails;
@@ -28,6 +31,15 @@ public class SliderActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Paper.init(SliderActivity.this);
+
+        if (AppCompatDelegate.getDefaultNightMode() == AppCompatDelegate.MODE_NIGHT_YES){
+            setTheme(R.style.Theme_Dark);
+        }
+        else {
+            setTheme(R.style.Theme_Lite);
+        }
+
         setContentView(R.layout.activity_slider);
 
         findViewByIdes();
