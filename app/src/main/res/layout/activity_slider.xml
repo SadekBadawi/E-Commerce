@@ -52,7 +52,7 @@
         android:fontFamily="@font/poppins_regular"
         android:gravity="center_horizontal"
         android:padding="10dp"
-        android:text="Get Start"
+        android:text="@string/lite"
         android:textColor="@color/white"
         android:textSize="@dimen/text_large">
 

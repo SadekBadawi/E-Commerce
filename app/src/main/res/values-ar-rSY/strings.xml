@@ -1,4 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">شسبشسب</string>
+    <string name="name" translatable="false">E-Commers</string>
+
+    <string name="lite">كاشف</string>
+    <string name="dark">غامق</string>
 </resources>
